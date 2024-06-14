@@ -9,12 +9,14 @@
 2. 데이터 설명
 
 	1) 날씨 데이터 ('weather_data.csv')
+
 	날씨 데이터는 다음과 같은 정보를 포함한다:
 		- date : 날짜
 		- temperture : 기온 (섭씨)
 		- humidity : 습도 (%)
 		- weather_condition : 날씨 상태 (맑음, 비, 눈 등)
 	2) 옷차림 데이터 ('outfit_data.csv')
+
 	옷차림 데이터는 날씨 조건에 따라 추천되는 옷차림을 포함한다:
 		- temperature_range : 기온 범위 (0-4, 5-8 등)
 		- humidity_range : 습도 범위 (0-50, 50-100 등)
