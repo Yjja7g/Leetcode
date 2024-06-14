@@ -11,19 +11,22 @@
 	1) 날씨 데이터 ('weather_data.csv')
 
 	날씨 데이터는 다음과 같은 정보를 포함한다:
+
 		- date : 날짜
 		- temperture : 기온 (섭씨)
 		- humidity : 습도 (%)
 		- weather_condition : 날씨 상태 (맑음, 비, 눈 등)
+   
 	2) 옷차림 데이터 ('outfit_data.csv')
 
 	옷차림 데이터는 날씨 조건에 따라 추천되는 옷차림을 포함한다:
+
 		- temperature_range : 기온 범위 (0-4, 5-8 등)
 		- humidity_range : 습도 범위 (0-50, 50-100 등)
 		- weather_condition : 날씨 상태 (맑음, 비, 눈 등)
 		- outfit_recommendation : 적절한 옷차림 추천 (두꺼운 코트, 우산, 가벼운 재킷 등)
 
-3. 데이터 획득 방법
+4. 데이터 획득 방법
 
 - 날씨 데이터는 OpenWeatherMap API를 통해 실시간으로 나타낸다.
 - 옷차림 데이터는 날씨 조건에 따른 적절한 옷차림을 사전에 정의하여 CSV 파일에 저장한다.
