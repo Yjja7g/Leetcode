@@ -8,6 +8,6 @@ class Solution:
       numToIndex[num] = i
 
 
-Reference
+## Reference
 https://leetcode.com/problems/two-sum/
 https://www.youtube.com/watch?v=s3KhqPjBPaQ      
