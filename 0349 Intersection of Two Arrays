@@ -1,0 +1,39 @@
+import collections
+
+class MovingAverage:
+    def __init__(self, size: int):
+        self.size = size
+        self.sum = 0
+        self.q = collections.deque()
+
+    def next(self, val: int) -> float:
+        if len(self.q) == self.size:
+            self.sum -= self.q.popleft()
+        self.sum += val
+        self.q.append(val)
+        return self.sum / len(self.q)
+
+class Solution:
+    def intersection(self, nums1, nums2):
+        # intersection logic here (example implementation)
+        return list(set(nums1) & set(nums2))
+
+# Example usage of MovingAverage class
+m = MovingAverage(3)
+print(m.next(1))  # Output: 1.0
+print(m.next(10)) # Output: 5.5
+print(m.next(3))  # Output: 4.666666666666667
+print(m.next(5))  # Output: 6.0
+
+# Example usage of Solution class
+s = Solution()
+print(s.intersection([1, 2, 2, 1], [2, 2]))  # Output: [2]
+
+# Assuming `_driver` function
+def _driver():
+    param_1 = [1, 2, 2, 1]
+    param_2 = [2, 2]
+    ret = Solution().intersection(param_1, param_2)
+    print(ret)  # Output: [2]
+
+_driver()
